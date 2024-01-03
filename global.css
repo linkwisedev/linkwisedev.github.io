@@ -8,7 +8,7 @@
     background-color: #0E2D89;
 }
 .car-bg {
-    background-color: #416EE9;
+    background-color: #416EE9 !important;
 }
 .navbar-light .navbar-nav .nav-link,
 .user-panel .info a {

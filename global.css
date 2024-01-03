@@ -1,0 +1,28 @@
+.brand-link {
+    background-color: #0E2D89;
+    font-size: 16px !important;
+    padding-bottom: 19px !important;
+    border-bottom: none !important;
+}
+.navbar-white {
+    background-color: #0E2D89;
+}
+.navbar-light .navbar-nav .nav-link,
+.user-panel .info a {
+    color: #fff;
+}
+.sidebar-dark-primary {
+    background-color: #1C1C2B !important;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #07070C !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "" !important;
+}
+.content-header {
+    padding: 15px 0.5rem 0 .5rem;
+}
+.content-welcome {
+    padding: 0 .5rem 15px .5rem;
+}

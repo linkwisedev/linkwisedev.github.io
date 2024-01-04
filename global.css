@@ -115,3 +115,9 @@
     border-radius: 50px;
     margin: 0 auto;
 }
+.login-page {
+    -ms-flex-align: flex-end !important;
+    align-items: flex-end !important;
+    display: flex !important;
+    padding: 0 11%;
+}

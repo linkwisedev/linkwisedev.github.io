@@ -97,3 +97,21 @@
     bottom: 0;
     display: grid;
 }
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.login-page {
+    background-image: url('dist/img/login-bg.png');
+}
+.login-page h2 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.login-page .btn {
+    width: 60%;
+    border-radius: 50px;
+    margin: 0 auto;
+}

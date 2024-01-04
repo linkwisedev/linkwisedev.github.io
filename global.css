@@ -36,3 +36,17 @@
 .card-header>.card-tools {
     color: #fff;
 }
+.attachment-block {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 10px !important;
+    position: relative;
+}
+.bg-color-card-announce {
+    background-color: #f8f9fa !important;
+}
+.download-file {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

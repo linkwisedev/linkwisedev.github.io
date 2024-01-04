@@ -82,3 +82,18 @@
     max-height: 70px !important;
     max-width: 70px !important;
 }
+.main-footer {
+    background-color: transparent !important;
+    border-top: none !important;
+    color: #fff !important;
+    padding: 0 !important;
+    text-align: center;
+}
+.main-footer strong {
+    font-size: 13px;
+}
+.sidebar__footer {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+}

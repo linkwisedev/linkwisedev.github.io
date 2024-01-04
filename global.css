@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dedede; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ddd; 
+}
 .brand-link {
     background-color: #0E2D89;
     font-size: 16px !important;
@@ -49,4 +70,15 @@
     position: absolute;
     right: 10px;
     top: 10px;
+}
+.todays__absent--card .attachment-img,
+.leave__card .attachment-img {
+    border-radius: 50px;
+}
+.leave__card table td {
+    border-top: none !important;
+}
+.attachment-block .attachment-img {
+    max-height: 70px !important;
+    max-width: 70px !important;
 }

@@ -121,3 +121,13 @@
     display: flex !important;
     padding: 0 11%;
 }
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover {
+    background-color: #416EE9;
+    color: #fff;
+}
+.content-header {
+    border-bottom: 1px solid #dedede;
+}
+#example1 {
+    background-color: #fff;
+}

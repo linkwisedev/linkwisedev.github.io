@@ -95,7 +95,8 @@
 .sidebar__footer {
     position: absolute;
     bottom: 0;
-    display: grid;
+    /* display: grid; */
+    background-color: #1C1C2B !important;
 }
 .img-responsive {
     display: block;
@@ -130,4 +131,30 @@
 }
 #example1 {
     background-color: #fff;
+}
+.btn-rounded {
+    border-radius: 50px !important;
+}
+.avatar-sm {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+}
+.avatar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.875rem;
+    width: 2.875rem;
+    border-radius: 0.375rem;
+}
+.text-heading {
+    --x-text-opacity: 1;
+    color: rgba(var(--x-heading-rgb), var(--x-text-opacity)) !important;
+    margin-left: 10px;
 }

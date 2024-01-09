@@ -1,856 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Human Resources System</title>
-        <!-- Google Font: Source Sans Pro -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-        <!-- Ionicons -->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <!-- Tempusdominus Bootstrap 4 -->
-        <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-        <!-- iCheck -->
-        <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-        <!-- JQVMap -->
-        <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-        <!-- Theme style -->
-        <link rel="stylesheet" href="dist/css/adminlte.min.css">
-        <!-- overlayScrollbars -->
-        <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-        <!-- Daterange picker -->
-        <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-        <!-- summernote -->
-        <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
-        <!-- global css -->
-        <link rel="stylesheet" href="global.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="hold-transition sidebar-mini layout-fixed">
-        <div class="wrapper">
-            <!-- Preloader -->
-            <!-- <div class="preloader flex-column justify-content-center align-items-center">
-                <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-            </div> -->
-
-            <!-- Navbar -->
-            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-                <!-- Left navbar links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                    </li>
-                </ul>
-
-                <!-- Right navbar links -->
-                <ul class="navbar-nav ml-auto">
-
-                    <!-- Messages Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" data-toggle="dropdown" href="#">
-                            <i class="far fa-comments"></i>
-                        </a>
-                    </li>
-
-                    <!-- Notifications Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" data-toggle="dropdown" href="#">
-                            <i class="far fa-bell"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <!-- Sidebar user panel (optional) -->
-                        <div class="user-panel d-flex" data-toggle="dropdown">
-                            <div class="image">
-                                <img src="dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
-                            </div>
-                            <div class="info">
-                                <a href="#" class="d-block">Alexander Pierce</a>
-                            </div>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                            <span class="dropdown-item dropdown-header">15 Notifications</span>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-envelope mr-2"></i> 4 new messages
-                                <span class="float-right text-muted text-sm">3 mins</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-users mr-2"></i> 8 friend requests
-                                <span class="float-right text-muted text-sm">12 hours</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-file mr-2"></i> 3 new reports
-                                <span class="float-right text-muted text-sm">2 days</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <!-- /.navbar -->
-
-            <!-- Main Sidebar Container -->
-            <aside class="main-sidebar sidebar-dark-primary">
-                <!-- Brand Logo -->
-                <a href="" class="brand-link">
-                    <img src="dist/img/logo-icon.png" alt="Linkwise Technology Philippines Logo" class="brand-image" style="opacity: .8">
-                    <span class="brand-text">LINKWISE TECHNOLOGY</span>
-                </a>
-
-                <!-- Sidebar -->
-                <div class="sidebar">
-
-                    <!-- Sidebar Menu -->
-                    <nav class="mt-2">
-                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-                            with font-awesome or any other icon font library -->
-                            <li class="nav-header">MAIN</li>
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link active">
-                                    <i class="nav-icon fas fa-tachometer-alt"></i>
-                                    <p>
-                                        Dashboard
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fa fa-fw fa-users"></i>
-                                    <p>
-                                        Employees
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="allemployees.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>All Employees</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Attendance</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Department/Designations</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Announcement</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Overtime</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fa fa-fw fa-file"></i>
-                                    <p>
-                                        File Manager
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Invoice</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Profile</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>E-commerce</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Projects</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Project Add</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Project Edit</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Project Detail</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Contacts</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>FAQ</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Contact us</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">
-                                    <i class="nav-icon fa fa-fw fa-calendar"></i>
-                                    <p>
-                                        Shift Schedule
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fa fa-fw fa-key"></i>
-                                    <p>
-                                        Authentication
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>
-                                                Login & Register v1
-                                                <i class="fas fa-angle-left right"></i>
-                                            </p>
-                                        </a>
-                                        <ul class="nav nav-treeview">
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Login v1</p>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Register v1</p>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Forgot Password v1</p>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Recover Password v1</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>
-                                                Login & Register v2
-                                                <i class="fas fa-angle-left right"></i>
-                                            </p>
-                                        </a>
-                                        <ul class="nav nav-treeview">
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Login v2</p>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Register v2</p>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Forgot Password v2</p>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="" class="nav-link">
-                                                    <i class="far fa-circle nav-icon"></i>
-                                                    <p>Recover Password v2</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Lockscreen</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Legacy User Menu</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Language Menu</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Error 404</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Error 500</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Pace</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Blank Page</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Starter Page</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">
-                                    <i class="nav-icon fa fa-fw fa-tags"></i>
-                                    <p>
-                                        Purchase Request
-                                    </p>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- /.sidebar-menu -->
-                    <!-- /.content-wrapper -->
-                    <footer class="main-footer ml-0 mb-2 sidebar__footer">
-                        <strong>Copyright &copy; 2024 Linkwise Technology</strong>
-                        <div style="font-size: 13px;" class="d-none d-sm-inline-block">
-                            All rights reserved.
-                        </div>
-                    </footer>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <!-- /.sidebar -->
-            </aside>
-
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <div class="content-header">
-                    <div class="container-fluid">
-                        <div class="row mb-2">
-                            <div class="col-sm-6">
-                                <h4 class="m-0">Dashboard</h4>
-                            </div><!-- /.col -->
-                            <div class="col-sm-6">
-                                <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item">7:30 PM</li>
-                                    <li class="breadcrumb-item">3/1/2024</li>
-                                </ol>
-                            </div><!-- /.col -->
-                        </div><!-- /.row -->
-                    </div><!-- /.container-fluid -->
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <!-- /.content-header -->
-
-                <div class="content-welcome">
-                    <div class="container-fluid">
-                        <h1 class="m-0">Welcome <span style="color: #0E2D89;">Admin!</span></h1>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                        </div>
                     </div>
                 </div>
-
-                <!-- Main content -->
-                <section class="content">
-                    <div class="container-fluid">
-                        <!-- Small boxes (Stat box) -->
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="row">
-                                    <div class="col-lg-4 col-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-                                                <p>Total Employees</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fa fa-fw fa-users"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-lg-4 col-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-success">
-                                            <div class="inner">
-                                                <h3>110</h3>
-                                                <p>Regular Employees</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fa fa-fw fa-user"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-lg-4 col-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-warning">
-                                            <div class="inner">
-                                                <h3>40</h3>
-                                                <p>Non-Regular Employees</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fa fa-fw fa-user"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="card">
-                                            <div class="card-header car-bg">
-                                                <h3 class="card-title">
-                                                    Shift Schedule
-                                                </h3>
-                                                <div class="card-tools">
-                                                    See all
-                                                </div>
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <table class="table table-striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>Onsite Employees</th>
-                                                            <th>Site Location</th>
-                                                            <th>Time</th>
-                                                            <th>Day</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Ronald, Joel</td>
-                                                            <td>1204 Edades Tower</td>
-                                                            <td>8:00AM -12:00PM</td>
-                                                            <td>Today</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Gary, Albert. Jhun Rhod, Arnel, Alfie</td>
-                                                            <td>Boston</td>
-                                                            <td>5:00PM - 3:00AM</td>
-                                                            <td>Today</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Alyanna, Freddie, Ferdinand, Jomar, Paulo...</td>
-                                                            <td>Emapta</td>
-                                                            <td>8:00AM - 5:00PM</td>
-                                                            <td>Tomorrow</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="card">
-                                            <div class="card-header car-bg">
-                                                <h3 class="card-title">
-                                                    Announcement
-                                                </h3>
-                                                <div class="card-tools">
-                                                    See all
-                                                </div>
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="attachment-block clearfix mb-0 bg-color-card-announce">
-                                                    <img class="attachment-img" src="dist/img/pine-tree.png" alt="" />
-                                                    <div class="attachment-pushed mt-3">
-                                                        <h5 class="attachment-heading">Christmas Day</h5>
-                                                        <div class="attachment-text">
-                                                            25 Dec 2024 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="attachment-block clearfix mb-0">
-                                                    <img class="attachment-img" src="dist/img/rizal.png" alt="" />
-                                                    <div class="attachment-pushed mt-3">
-                                                        <h5 class="attachment-heading">Rizal Day</h5>
-                                                        <div class="attachment-text">
-                                                             30 Dec 2024
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="attachment-block clearfix mb-0 bg-color-card-announce">
-                                                    <img class="attachment-img" src="dist/img/priest.png" alt="" />
-                                                    <div class="attachment-pushed mt-3">
-                                                        <h5 class="attachment-heading">Maundy Thursday</h5>
-                                                        <div class="attachment-text">
-                                                            28 Mar 2024
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="attachment-block clearfix mb-0">
-                                                    <img class="attachment-img" src="dist/img/file-icon.png" alt="" />
-                                                    <div class="attachment-pushed mt-3">
-                                                        <h5 class="attachment-heading">Memos</h5>
-                                                        <div class="attachment-text">
-                                                            01 Feb 2024
-                                                        </div>
-                                                    </div>
-                                                    <i class="download-file fa fa-fw fa-download"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!-- /.row -->
-                        <!-- Main row -->
-                        <div class="row">
-                            <!-- Left col -->
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="card">
-                                    <div class="card-header car-bg">
-                                        <h3 class="card-title">
-                                            Today's Absent
-                                        </h3>
-                                        <div class="card-tools">
-                                            See all
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-0 todays__absent--card overflow-auto" style="overflow: hidden; width: auto; height: 480px;">
-                                        <div class="attachment-block clearfix mb-0 bg-color-card-announce">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <img class="attachment-img" src="dist/img/avatar2.png" alt="" />
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Shiela Valdez</h5>
-                                                        <div class="attachment-text">
-                                                            22 Dec 2023 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Batangas City</h5>
-                                                        <div class="attachment-text">
-                                                            Location 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="attachment-block clearfix mb-0">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <img class="attachment-img" src="dist/img/avatar.png" alt="" />
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Paulo Jimenez</h5>
-                                                        <div class="attachment-text">
-                                                            22 Dec 2023 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Tarlac City</h5>
-                                                        <div class="attachment-text">
-                                                            Location 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="attachment-block clearfix mb-0 bg-color-card-announce">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <img class="attachment-img" src="dist/img/avatar4.png" alt="" />
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Gino Marquez</h5>
-                                                        <div class="attachment-text">
-                                                            22 Dec 2023 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Laguna</h5>
-                                                        <div class="attachment-text">
-                                                            Location 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="attachment-block clearfix mb-0">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <img class="attachment-img" src="dist/img/avatar5.png" alt="" />
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Carlo Reyes</h5>
-                                                        <div class="attachment-text">
-                                                            22 Dec 2023 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Pangasinan</h5>
-                                                        <div class="attachment-text">
-                                                            Location 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="attachment-block clearfix mb-0 bg-color-card-announce">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <img class="attachment-img" src="dist/img/avatar3.png" alt="" />
-                                                </div>
-                                                <div class="col-lg-5 col-md-5 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Jenny Gonzales</h5>
-                                                        <div class="attachment-text">
-                                                            22 Dec 2023 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="attachment-pushed ml-0 mt-3">
-                                                        <h5 class="attachment-heading">Taguig City</h5>
-                                                        <div class="attachment-text">
-                                                            Location 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.Left col -->
-                            <!-- right col -->
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="card">
-                                    <div class="card-header car-bg">
-                                        <h3 class="card-title">
-                                            Leave
-                                        </h3>
-                                        <div class="card-tools">
-                                            See all
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-0 leave__card overflow-auto" style="overflow: hidden; width: auto; height: 480px;">
-                                        <table class="table bg-color-card-announce">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="4">
-                                                        <div class="attachment-block clearfix mb-0 p-0">
-                                                            <img class="attachment-img" src="dist/img/avatar.png" alt="" />
-                                                            <div class="attachment-pushed mt-3">
-                                                                <h5 class="attachment-heading">Kenneth Hermosilla</h5>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        SL <br>
-                                                        <span>Leave Type</span>
-                                                    </td>
-                                                    <td>
-                                                        20 Dec 2023 <br>
-                                                        <span>From</span>
-                                                    </td>
-                                                    <td>
-                                                        21 Dec 2023 <br>
-                                                        <span>Until</span>
-                                                    </td>
-                                                    <td><span class="badge bg-green p-2">Approved</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="4">
-                                                        <div class="attachment-block clearfix mb-0 p-0">
-                                                            <img class="attachment-img" src="dist/img/avatar2.png" alt="" />
-                                                            <div class="attachment-pushed mt-3">
-                                                                <h5 class="attachment-heading">Jane Doe</h5>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        SL <br>
-                                                        <span>Leave Type</span>
-                                                    </td>
-                                                    <td>
-                                                        20 Dec 2023 <br>
-                                                        <span>From</span>
-                                                    </td>
-                                                    <td>
-                                                        21 Dec 2023 <br>
-                                                        <span>Until</span>
-                                                    </td>
-                                                    <td><span class="badge bg-green p-2">Approved</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="table bg-color-card-announce">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="4">
-                                                        <div class="attachment-block clearfix mb-0 p-0">
-                                                            <img class="attachment-img" src="dist/img/avatar.png" alt="" />
-                                                            <div class="attachment-pushed mt-3">
-                                                                <h5 class="attachment-heading">Justin Banes</h5>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        SL <br>
-                                                        <span>Leave Type</span>
-                                                    </td>
-                                                    <td>
-                                                        20 Dec 2023 <br>
-                                                        <span>From</span>
-                                                    </td>
-                                                    <td>
-                                                        21 Dec 2023 <br>
-                                                        <span>Until</span>
-                                                    </td>
-                                                    <td><span class="badge bg-green p-2">Approved</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- right col -->
-                        </div>
-                        <!-- /.row (main row) -->
-                    </div><!-- /.container-fluid -->
-                </section>
-                <!-- /.content -->
             </div>
-
-            <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
-                <!-- Control sidebar content goes here -->
-            </aside>
-            <!-- /.control-sidebar -->
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+                        Free Download!
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            2215 John Daniel Drive
+                            <br />
+                            Clark, MO 65243
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
         </div>
-        <!-- ./wrapper -->
-
-        <!-- jQuery -->
-        <script src="plugins/jquery/jquery.min.js"></script>
-        <!-- jQuery UI 1.11.4 -->
-        <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-        <script>
-            $.widget.bridge('uibutton', $.ui.button)
-        </script>
-        <!-- Bootstrap 4 -->
-        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- ChartJS -->
-        <script src="plugins/chart.js/Chart.min.js"></script>
-        <!-- Sparkline -->
-        <script src="plugins/sparklines/sparkline.js"></script>
-        <!-- JQVMap -->
-        <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-        <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-        <!-- jQuery Knob Chart -->
-        <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-        <!-- daterangepicker -->
-        <script src="plugins/moment/moment.min.js"></script>
-        <script src="plugins/daterangepicker/daterangepicker.js"></script>
-        <!-- Tempusdominus Bootstrap 4 -->
-        <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-        <!-- Summernote -->
-        <script src="plugins/summernote/summernote-bs4.min.js"></script>
-        <!-- overlayScrollbars -->
-        <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="dist/js/adminlte.js"></script>
-        <!-- AdminLTE for demo purposes -->
-        <script src="dist/js/demo.js"></script>
-        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="dist/js/pages/dashboard.js"></script>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

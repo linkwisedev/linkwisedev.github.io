@@ -25,7 +25,7 @@
     width: 35%;
 }
 .masthead {
-    background: url('assets/img/portfolio/Abstract-Modern-Bg.mp4');
+    /* background: url('assets/img/portfolio/Abstract-Modern-Bg.mp4'); */
     /* Create grid spanning viewport width & height */
     display: grid;
     grid-template-rows: 30vh;
@@ -59,7 +59,7 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-
+    z-index: 1;
     /* Semi-transparent background */
     /* background-color: rgba(0, 0, 0, 0.55); */
 }
@@ -88,14 +88,14 @@
 .btn-inquire {
     border: 3px solid #445CFF;
     padding: 10px;
-    width: 50%;
+    width: 33%;
     margin: 0 auto;
     color: #445CFF;
 }
 #portfolio .container {
     width: 100%;
     height: 100%;
-    max-width: 1034px;
+    max-width: 1211px;
     max-height: 543px;
     margin: 0 auto;
     top: 409px;
@@ -130,14 +130,143 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
 }
 .lead {
     color: #000;
     text-align: center;
+    margin-bottom: 25px;
 }
 #about.page-section {
-    padding: 18rem 0 6rem 0 !important;
+    background-color: #F5F5F8;
+    padding: 24rem 0 1rem 0 !important;
 }
 #about .btn-inquire {
     margin: 0 auto;
+    width: auto;
+    padding: 10px 15px;
+    display: block;
 }
+#client .label__title h1 {
+    color: #445CFF;
+    margin: 0;
+    display: block;
+}
+#client.page-section {
+    padding: 1rem 0;
+}
+#project {
+    display: grid;
+    grid-template-rows: 8vh;
+    overflow: hidden;
+    color: #fff;
+    /* background-color: #F5F5F8; */
+}
+#project .label__title h1 {
+    color: #fff;
+}
+#project .video-overlay h2 {
+    color: #fff;
+}
+#project .temp__blocks img {
+    /* height: auto; */
+    width: 636px;
+}
+#project .video-bg {
+    height: 1270px;
+}
+#services .label__title h1 {
+    color: #445CFF;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+#services.page-section {
+    background-color: #F5F5F8;
+    padding: 2rem 0;
+}
+.services__wrap {
+    background-image: url('../assets/img/portfolio/dotdot.png');
+    background-position: 50% -112px;
+    background-color: #000;
+    border-radius: 35px;
+    width: 100%;
+    height: auto;
+}
+.services__content p {
+    color: #fff;
+    font-size: 48px;
+}
+#services img {
+    border-radius: 35px;
+}
+.blocks img,
+.blocks h3 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.blocks p {
+    text-align: center;
+}
+#process .label__title h1 {
+    color: #445CFF;
+}
+#process.page-section,
+#advancements.page-section {
+    padding: 4rem 0 2rem 0;
+}
+#process h2,
+#process p {
+    text-align: center;
+}
+#process .process__video {
+    width: 100%;
+}
+#process p {
+    font-size: 30px;
+}
+#advancements {
+    background-color: #070527;
+    color: #fff;
+}
+#advancements .img-advancement {
+    border-radius: 35px;
+    border: 1px solid #fff;
+}
+.blocks__accordion--wrapper {
+    background-color: #0F1A42;
+    padding: 10px;
+}
+.accordion-button,
+.accordion-button::after {
+    color: #fff;
+}
+.accordion-button::after {
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+#businessGrowth {
+    padding: 4rem 0 2rem 0;
+    position: relative
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -31,7 +31,7 @@ html {
     /* background: url('assets/img/portfolio/Abstract-Modern-Bg.mp4'); */
     /* Create grid spanning viewport width & height */
     display: grid;
-    grid-template-rows: 30vh;
+    grid-template-rows: 22vh;
     overflow: hidden;
 }
 .masthead {
@@ -145,7 +145,7 @@ html {
 }
 #about.page-section {
     background-color: #F5F5F8;
-    padding: 24rem 0 1rem 0 !important;
+    padding: 27rem 0 1rem 0 !important;
 }
 #about .btn-inquire {
     margin: 0 auto;

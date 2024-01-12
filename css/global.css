@@ -87,10 +87,13 @@
 }
 .btn-inquire {
     border: 3px solid #445CFF;
+    background-color: #fff;
     padding: 10px;
-    width: 33%;
+    width: 45%;
     margin: 0 auto;
     color: #445CFF;
+    font-weight: 600;
+    font-size: 24px;
 }
 #portfolio .container {
     width: 100%;
@@ -135,7 +138,7 @@
 .lead {
     color: #000;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 #about.page-section {
     background-color: #F5F5F8;
@@ -146,6 +149,7 @@
     width: auto;
     padding: 10px 15px;
     display: block;
+    width: 26%;
 }
 #client .label__title h1 {
     color: #445CFF;
@@ -250,13 +254,70 @@
 .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
 }
-#businessGrowth {
-    padding: 4rem 0 2rem 0;
-    position: relative
+#businessGrowth.page-section {
+    padding: 0;
+    position: relative;
+    background: url('../assets/img/portfolio/inquiry-form.png');
+    background-size:cover; 
+    background-position:center; 
 }
 /* .covered-img {
-    background: url('../assets/');
+    background: url('../assets/img/portfolio/inquiry-form.png');
+    opacity: .25;
+
+    background-size:cover; 
+    background-position:center; 
+    
+    position:absolute;
+    top:0;bottom:0;left:0;right:0; 
 } */
+#businessGrowth h2 {
+    text-align: center;
+}
+.bg__masked {
+    padding: 3rem 0 2rem 0;
+    background: rgba(255, 255, 255, 0.7);
+    /* opacity: .5; */
+}
+.form__wrapper {
+    width: 48%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #fff;
+}
+.form__wrapper h2 {
+    color: #445CFF;
+    text-align: left !important;
+}
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 4px;
+    background-color: #EEF0F2;
+    border: none;
+}
+.form-control:focus {
+    background-color: #EEF0F2 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+#message.form-control {
+    background-color: #EEF0F2 !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+.btn__submit {
+    background-color: #445CFF;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+}
+footer.footer {
+    padding: 0 !important;
+}
 
 
 

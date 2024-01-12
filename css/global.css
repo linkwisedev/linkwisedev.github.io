@@ -177,7 +177,8 @@ html {
 }
 #project .temp__blocks img {
     /* height: auto; */
-    width: 636px;
+    /* width: 636px; */
+    width: 100%;
 }
 .temp__blocks p {
     font-size: 20px;
@@ -370,6 +371,10 @@ footer.footer {
 @media (max-width: 1120px) {
     #about.page-section {
         padding: 27rem 0 1rem 0 !important;
+    }
+
+    #client .logo__company img {
+        width: 100%;
     }
 }
 @media (max-width: 1024px) {

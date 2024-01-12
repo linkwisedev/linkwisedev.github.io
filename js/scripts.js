@@ -50,9 +50,4 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
-    var x = document.getElementById("laptopVideo");
-    console.log(x, 'x')
-    x.autoplay = true;
-    x.load();
 });

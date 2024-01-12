@@ -187,7 +187,8 @@
 }
 #services.page-section {
     background-color: #F5F5F8;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem;
+    /* font-family: 'Plus Jakarta Sans'; */
 }
 .services__wrap {
     background-image: url('../assets/img/portfolio/dotdot.png');
@@ -200,6 +201,7 @@
 .services__content p {
     color: #fff;
     font-size: 48px;
+    font-weight: bold;
 }
 #services img {
     border-radius: 35px;
